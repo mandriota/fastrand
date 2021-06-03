@@ -25,10 +25,10 @@ uint16_t Next16(struct RandomGenerator*)
 
 ### 32-bit random function
 ```c
-uint64_t uint32_t Next32(struct RandomGenerator*)
+uint32_t Next32(struct RandomGenerator*)
 ```
 
 ### 64-bit random function
 ```c
-Next32(struct RandomGenerator*)
+uint64_t Next32(struct RandomGenerator*)
 ```
