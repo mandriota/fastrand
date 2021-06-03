@@ -1,7 +1,7 @@
 # FastRand
 Simple library for fast generation of pseudo-random 16-, 32- and 64-bit numbers with large interval.
 
-Generator structure
+### Generator structure
 ```c
 struct RandomGenerator {
     union {
@@ -13,22 +13,22 @@ struct RandomGenerator {
 ```
 defined as `RGen`
 
-Generator constructor
+### Generator constructor
 ```c
 NewRGen(uint64_t);
 ```
 
-16-bit random function
+### 16-bit random function
 ```c
 Next16(struct RandomGenerator*)
 ```
 
-32-bit random function
+### 32-bit random function
 ```c
 Next32(struct RandomGenerator*)
 ```
 
-64-bit random function
+### 64-bit random function
 ```c
 Next32(struct RandomGenerator*)
 ```
