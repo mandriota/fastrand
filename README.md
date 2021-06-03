@@ -11,6 +11,7 @@ struct RandomGenerator {
     };
 };
 ```
+defined as `RGen`
 
 Generator constructor
 ```c
