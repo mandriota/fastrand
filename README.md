@@ -22,13 +22,16 @@ struct RandomGenerator NewRGen(uint64_t);
 ```c
 uint16_t Next16(struct RandomGenerator*)
 ```
+**Magic constants: term=`0x2419`; factor=`0x1FFF`; mask=`0x8035`;**
 
 ### 32-bit random function
 ```c
 uint32_t Next32(struct RandomGenerator*)
 ```
+**Magic constants: term=`0x5170A71`; factor=`0x3FFC001`; mask=`0x40350AF9`;**
 
 ### 64-bit random function
 ```c
 uint64_t Next64(struct RandomGenerator*)
 ```
+**Magic constants: term=`0xB7BCB7E909`; factor=`0x7FF4005FFF`; mask=`0x2027D077C58D`;**
