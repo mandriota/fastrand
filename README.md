@@ -15,17 +15,20 @@ defined as `RGen`
 
 ### Generator constructor
 ```c
-NewRGen(uint64_t);
+RandomGenerator NewRGen(uint64_t);
 ```
 
+uint16_t __fastcall Next16(RGen *);
+uint32_t __fastcall Next32(RGen *);
+uint64_t __fastcall Next64(RGen *);
 ### 16-bit random function
 ```c
-Next16(struct RandomGenerator*)
+uint16_t Next16(struct RandomGenerator*)
 ```
 
 ### 32-bit random function
 ```c
-Next32(struct RandomGenerator*)
+uint64_t uint32_t Next32(struct RandomGenerator*)
 ```
 
 ### 64-bit random function
