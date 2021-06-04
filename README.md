@@ -3,12 +3,10 @@ Simple library for fast generation of pseudo-random 16-, 32- and 64-bit numbers 
 
 ### Generator structure
 ```c
-struct RandomGenerator {
-    union {
-        uint_fast16_t n16;
-        uint_fast32_t n32;
-        uint_fast64_t n64;
-    };
+union RandomGenerator {
+    uint_fast16_t n16;
+    uint_fast32_t n32;
+    uint_fast64_t n64;
 };
 ```
 defined as `RGen`
