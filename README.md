@@ -34,4 +34,4 @@ uint32_t Next32(struct RandomGenerator*)
 ```c
 uint64_t Next64(struct RandomGenerator*)
 ```
-**Interval: ?**
+**Interval: ? / 2 pow 64**
