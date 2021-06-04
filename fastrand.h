@@ -12,6 +12,9 @@ typedef union RandomGenerator {
 
 RGen __fastcall NewRGen(uint64_t);
 
+// 16-bit generator function with interval 2 pow 16
 uint16_t __fastcall Next16(RGen *);
+// 32-bit generator function with interval 3511416960
 uint32_t __fastcall Next32(RGen *);
+// 64-bit generator function with interval ?
 uint64_t __fastcall Next64(RGen *);
