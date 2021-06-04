@@ -4,12 +4,10 @@
 // =====================================================
 #include <inttypes.h>
 
-typedef struct RandomGenerator {
-    union {
-        uint_fast16_t n16;
-        uint_fast32_t n32;
-        uint_fast64_t n64;
-    };
+typedef union RandomGenerator {
+    uint_fast16_t n16;
+    uint_fast32_t n32;
+    uint_fast64_t n64;
 } RGen;
 
 RGen __fastcall NewRGen(uint64_t);
