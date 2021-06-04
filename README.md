@@ -13,23 +13,23 @@ defined as `RGen`
 
 ### Generator constructor
 ```c
-struct RandomGenerator NewRGen(uint64_t);
+RGen NewRGen(uint64_t);
 ```
 
 ### 16-bit random function
 ```c
-uint16_t Next16(struct RandomGenerator*)
+uint16_t Next16(RGen *)
 ```
 **Interval: 2 pow 16 / 2 pow 16**
 
 ### 32-bit random function
 ```c
-uint32_t Next32(struct RandomGenerator*)
+uint32_t Next32(RGen *)
 ```
 **Interval: 3511416960 / 2 pow 32**
 
 ### 64-bit random function
 ```c
-uint64_t Next64(struct RandomGenerator*)
+uint64_t Next64(RGen *)
 ```
 **Interval: ? / 2 pow 64**
