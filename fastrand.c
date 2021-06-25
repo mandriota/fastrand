@@ -1,3 +1,7 @@
+// Copyright 2021 Mark Mandriota. All rights reserved.
+// Use of this source code is governed by a MIT-style
+// license that can be found in the LICENSE file.
+// =====================================================
 #include "fastrand.h"
 
 inline RGen __fastcall NewRGen(uint64_t seed) {
