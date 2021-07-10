@@ -9,7 +9,7 @@ inline RGen __fastcall NewRGen(uint64_t seed) {
 }
 
 inline uint16_t __fastcall Next16(RGen * restrict g) {
-    const register uint_fast64_t x = 0x2419+g->n16*0x1FFF ^ 0x8035;
+    const register uint_fast16_t x = 0x2419+g->n16*0x1FFF ^ 0x8035;
     return g->n16 = x>>8 | x<<8;
 }
 
